@@ -1,2 +1,4 @@
 #!/bin/bash
-echo "pwd"
+
+repopath=$(git rev-parse --show-toplevel)
+echo "$repopath"
