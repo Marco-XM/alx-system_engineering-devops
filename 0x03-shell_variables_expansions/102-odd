@@ -1,2 +1,2 @@
 #!/bin/bash
-awk 'NR % 2 == 1' input.txt
+grep -n '.*' input.txt | sed -n 'n;p' | cut -d: -f2-
