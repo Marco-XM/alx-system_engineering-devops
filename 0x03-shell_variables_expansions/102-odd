@@ -1,2 +1,2 @@
 #!/bin/bash
-grep -n '.*' input.txt | sed -n 'n;p' | cut -d: -f2-
+paste -d, - - | cut -d, -f1
